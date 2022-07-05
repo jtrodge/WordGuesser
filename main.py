@@ -20,10 +20,10 @@ print("HINT: The word contains " + str(countWord) + " letters.\n")
 guess = ''
 print("Guess the word: ")
 guess = input()
-letterCounter = 0
-pos = []
 minSize = min(len(guess), len(randWord))
 while guess != randWord:
+    pos = []
+    letterCounter = 0
     for i in range(minSize):
         if guess[i] == randWord[i]:
             letterCounter += 1
